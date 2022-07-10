@@ -3,6 +3,7 @@
 let fibbonachi = prompt('Введите число фибоначчи:', 0);
 let f0 = 0;
 let f1 = 1;
+let str = '';
 
 while (isNaN(fibbonachi)) {
     fibbonachi = prompt('Введите число фибоначчи:', 0);
@@ -12,10 +13,12 @@ for (let i = 0; i < fibbonachi; i++) {
     let temp = f0;
     f0 += f1;
     f1 = temp;
-    console.log(f1);
+    str += f1;
 }
 
-// Piramida
+console.log('Результат: '+str.replaceAll('', ', ').replace(',', ' '));
+
+Piramida
 
 let piramida = prompt('Введите число пирамиды:', 0);
 
