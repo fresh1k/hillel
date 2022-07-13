@@ -1,21 +1,31 @@
 // Zadanie 1
-// let arr1 = [3, 45, 23, 78, 34];
-// let arr2 = [4, 2, 34, 4, 12, 1];
+let arr1 = [3, 45, 23, 78, 34];
+let arr2 = [4, 2, 34, 4, 12];
+let arr3 = [];
 
-// let arr3 = [];
+let arrayLength = null;
 
+if (arr1.length > arr2.length) {
+    arrayLength = arr1.length;
+} else {
+   arrayLength = arr2.length;
+}
 
+for (let i = 0; i < arrayLength; i++) {
+    if (arr1.length < arr2.length) {
+        arr1.push(1);
+    } else {
+        arr2.push(1);
+    }
+    arr3.push(arr1[i] * arr2[i]);
+}
 
-// for (let i = 0; i < arr1.length; i++) {
-//     arr3.push(arr1[i] * arr2[i]);
-// }
-
-// console.log(arr3);
+console.log(arr3);
 
 
 // Zadanie 2
 
-// let arr = [4, 2, 34, 4, 1, 12, 1, 4, 34, 56, 12];
+// let arr = [4,2,34,4,1,12,1,4];
 
 // let arr1 = [];
 
