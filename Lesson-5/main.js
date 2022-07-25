@@ -39,3 +39,14 @@
 // }
 
 // console.log(addNumber(2, 5));
+
+// Zadanie 5
+
+// let arr1 = [23, 56, 4, 78, 5, 63, 45, 210, 56, 63];
+
+// let deleteElement = (arr, num) => {
+//     let result = arr.filter((el) => el !== num);
+//     console.log(result);
+// }
+
+// deleteElement(arr1, 63);
