@@ -36,36 +36,37 @@
 
 // Zadanie 3
 
-// function guessingGame(x) {
-//     let randomInt = Math.floor(Math.random() * (11 - 1)) + 1;
-//     let counter = x;
-//     let count = 0;
-//     console.log(randomInt);
-//     return function (y) {
-//         if (counter > 0) {
-//             if (count < 1) {
-//                 if (y > randomInt) {
-//                     counter--;
-//                     return console.log("Your guess is too high!");
-//                 } else if (y === randomInt) {
-//                     counter--;
-//                     count++;
-//                     return console.log("You got it!");
-//                 }
-//                 else if (y < randomInt) {
-//                     counter--;
-//                     return console.log("Your guess is too low!");
-//                 }   
-//             }
-//             else {
-//                 return console.log("You know the answer. What do you want from me?");
-//             }
-//         }
-//         else {
-//             return console.log(`No more guesses the answer was ${randomInt}! Please start a new game`);
-//         }   
-//     }
-// }
+function guessingGame(x) {
+    let randomInt = Math.floor(Math.random() * (11 - 1)) + 1;
+    let counter = x;
+    let count = 0;
+    console.log(randomInt);
+    return function (y) {
+        if (counter > 0) {
+            if (count < 1) {
+                if (y > randomInt) {
+                    counter--;
+                    return console.log("Your guess is too high!");
+                } else if (y === randomInt) {
+                    counter--;
+                    count++;
+                    return console.log("You got it!");
+                }
+                else if (y < randomInt) {
+                    counter--;
+                    return console.log("Your guess is too low!");
+                }   
+            }
+            else {
+                counter--;
+                return console.log("You know the answer. What do you want from me?");
+            }
+        }
+        else {
+            return console.log(`No more guesses the answer was ${randomInt}! Please start a new game`);
+        }   
+    }
+}
 
 
 // let game2 = guessingGame(5);

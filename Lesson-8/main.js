@@ -36,6 +36,7 @@ const books = [
     }
 ];
 
+
 document.write(
 `<div id="container">
     <table class="table">
