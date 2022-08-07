@@ -58,14 +58,14 @@ class Hamburger{
         let price = this.size.price;
         this.toppings.forEach(item => price += item.price)
         this.supplement.forEach(item => price += item.price)
-        return console.log(price)
+        return console.log("Сумма заказа:", price)
     }
 
     getCalories() {
         let callories = this.size.callories;
         this.toppings.forEach(item => callories += item.callories)
         this.supplement.forEach(item => callories += item.callories)
-        return console.log(callories)
+        return console.log("Каллории: ", callories)
     }
 }
 
