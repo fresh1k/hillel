@@ -19,32 +19,10 @@ body {
     background-color: #000;
     font-family: "StarWars";
     color: var(--main-color);
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.logo {
-    max-width: 200px;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-}
-
-.nav-link {
-    text-decoration: none;
-    margin-right: 50px;
-    font-size: 20px;
-    color:var(--main-color);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header-search {
@@ -60,20 +38,12 @@ body {
 
 }
 
-.main {
-    margin-top: 80px;
-}
-
 .main-container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.films {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
+    gap: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
 
 .film-poster {
     max-width: 295px;
@@ -81,7 +51,9 @@ body {
 }
 
 .film-description {
-    max-width: 295px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
 }
 
 .film-link {
@@ -98,6 +70,5 @@ body {
 .film-year {
     font-size: 20px;
     text-align: center;
-    padding-right: 20px;
     padding-top: 30px;
-}
+    }
